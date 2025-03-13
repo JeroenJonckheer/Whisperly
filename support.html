@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whisperly Support</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #222;
+        }
+        p {
+            line-height: 1.6;
+            text-align: center;
+        }
+        .faq {
+            margin-top: 20px;
+        }
+        .faq-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .faq-item h3 {
+            margin: 0;
+            cursor: pointer;
+            color: #007bff;
+        }
+        .faq-item p {
+            display: none;
+            margin: 10px 0 0;
+        }
+        .contact-form {
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Whisperly Support</h1>
+        <p>Need help? Find answers below or contact us directly.</p>
+
+        <!-- FAQ Section -->
+        <div class="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <h3>🔊 Why is Whisperly not playing affirmations in the background?</h3>
+                <p>Make sure Background App Refresh is enabled in your device settings. Also, ensure Whisperly has permission to play audio in the background.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>📱 Does Whisperly work on all iOS devices?</h3>
+                <p>Whisperly works on all iPhones and iPads running iOS 15 or later.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>⚙️ How can I adjust the voice settings?</h3>
+                <p>Go to the app settings and choose your preferred voice under "Speech Settings".</p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="mailto:support@whisperly.app" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="4" placeholder="How can we help you?" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // FAQ Toggle Functionality
+        document.querySelectorAll('.faq-item h3').forEach(item => {
+            item.addEventListener('click', () => {
+                let answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+
+</body>
+</html>
