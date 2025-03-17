@@ -28,22 +28,21 @@
             line-height: 1.6;
             text-align: center;
         }
-        .faq {
+        .features {
             margin-top: 20px;
         }
-        .faq-item {
-            margin-bottom: 10px;
+        .feature-item {
+            margin-bottom: 20px;
             padding: 10px;
             border-bottom: 1px solid #ddd;
         }
-        .faq-item h3 {
+        .feature-item h3 {
             margin: 0;
-            cursor: pointer;
             color: #007bff;
         }
-        .faq-item p {
-            display: none;
-            margin: 10px 0 0;
+        .feature-item p {
+            margin: 5px 0 0;
+            text-align: left;
         }
         .contact-form {
             margin-top: 20px;
@@ -75,45 +74,50 @@
 
     <div class="container">
         <h1>Whisperly Support</h1>
-        <p>Need help with your whispering affirmations? Find answers below or contact us directly.</p>
+        <p>Everything you need to know about your whispering affirmations app.</p>
 
-        <!-- FAQ Section -->
-        <div class="faq">
-            <h2>Frequently Asked Questions</h2>
+        <!-- Features List -->
+        <div class="features">
+            <h2>How Whisperly Works</h2>
 
-            <div class="faq-item">
-                <h3>🎧 Why is the screen locked with "For your ears only"?</h3>
-                <p>Whisperly requires a headset (wired or Bluetooth) to play affirmations. Connect your headset to unlock the app and start listening.</p>
+            <div class="feature-item">
+                <h3>🎧 Headset Required</h3>
+                <p>Whisperly is designed for your ears only. You need a headset (wired or Bluetooth) to use it. Without a headset, the screen locks with a "For your ears only" message, and playback stops immediately.</p>
             </div>
 
-            <div class="faq-item">
-                <h3>🔊 Why is Whisperly not playing affirmations in the background?</h3>
-                <p>Ensure Background App Refresh is enabled in your device settings and that Whisperly has permission to play audio in the background. Also, make sure a headset is connected.</p>
+            <div class="feature-item">
+                <h3>⏱️ Random Intervals</h3>
+                <p>Affirmations play at random times between 5 and 25 minutes (300-1500 seconds). A countdown timer on the left shows when the next whisper arrives.</p>
             </div>
 
-            <div class="faq-item">
-                <h3>⏱️ How often do affirmations play?</h3>
-                <p>Affirmations play at random intervals between 5 and 25 minutes (300-1500 seconds). The countdown timer shows when the next one will whisper.</p>
+            <div class="feature-item">
+                <h3>▶️ One-Tap Control</h3>
+                <p>Tap the play button in the center to start whispering affirmations. Tap it again (now a stop button) to pause. The button is disabled without a headset.</p>
             </div>
 
-            <div class="faq-item">
-                <h3>📱 Does Whisperly work on all iOS devices?</h3>
-                <p>Whisperly works on all iPhones and iPads running iOS 15 or later.</p>
+            <div class="feature-item">
+                <h3>🔉 Volume Adjustment</h3>
+                <p>Swipe up or down on the right side of the screen to adjust the volume (0-100 scale). A number appears while swiping to show your current level, and the volume changes in real-time.</p>
             </div>
 
-            <div class="faq-item">
-                <h3>🔉 How can I adjust the volume?</h3>
-                <p>Swipe up or down on the right side of the screen to adjust the volume (0-100 scale). The number appears while swiping to show your current level.</p>
+            <div class="feature-item">
+                <h3>🔄 Unique Playback Order</h3>
+                <p>Whisperly has 100+ affirmations. It plays them all once in a random order before starting a new cycle, so you won’t hear repeats until every affirmation has been played.</p>
             </div>
 
-            <div class="faq-item">
-                <h3>🔄 Why don’t affirmations repeat until later?</h3>
-                <p>Whisperly plays all 100+ affirmations in a unique random order before starting a new cycle, so you won’t hear repeats until every affirmation has been played once.</p>
+            <div class="feature-item">
+                <h3>🎙️ Whispering Voice</h3>
+                <p>The affirmations are delivered in a soft, whispering voice for a calming effect. The voice itself can’t be changed—it’s designed to keep things simple and soothing.</p>
             </div>
 
-            <div class="faq-item">
-                <h3>⚙️ Can I change the voice or timing?</h3>
-                <p>No, Whisperly keeps it simple. The voice and timing (5-25 minutes) are fixed for a seamless, distraction-free experience.</p>
+            <div class="feature-item">
+                <h3>📱 Background Playback</h3>
+                <p>Whisperly runs in the background while you work, relax, or sleep. Ensure Background App Refresh and audio permissions are enabled in your device settings.</p>
+            </div>
+
+            <div class="feature-item">
+                <h3>🌐 Offline Mode</h3>
+                <p>No internet is needed—Whisperly works fully offline, with all affirmations stored locally on your device.</p>
             </div>
         </div>
 
@@ -128,16 +132,6 @@
             </form>
         </div>
     </div>
-
-    <script>
-        // FAQ Toggle Functionality
-        document.querySelectorAll('.faq-item h3').forEach(item => {
-            item.addEventListener('click', () => {
-                let answer = item.nextElementSibling;
-                answer.style.display = answer.style.display === "block" ? "none" : "block";
-            });
-        });
-    </script>
 
 </body>
 </html>
