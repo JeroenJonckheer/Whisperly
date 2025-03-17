@@ -7,7 +7,7 @@ Whisperly plays gentle affirmations at random intervals, helping you stay positi
 ---
 
 ## 🚀 Features  
-✅ Randomly plays affirmations **at random intervals between 5 and 25 minutes** (300-1500 seconds, keeping the surprise alive!)  
+✅ Randomly plays affirmations **at random intervals between 5 and 25 minutes** (300-1500 seconds, no you can't alter that, affirmations will remain a surprise!)  
 ✅ Works **in the background** 🎧  
 ✅ **Whispering voice effect** with adjustable volume for a soft, calming experience  
 ✅ Simple **one-tap start/stop button**  
